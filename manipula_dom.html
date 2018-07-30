@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-br">
+        <title>DOM</title>
+    </head>
+    <body>
+        <!-- Aula 1
+        <div id="app">
+            <button onclick="mostraAlerta()">Clique</button>
+        </div>
+
+        <script>
+            function mostraAlerta(){
+                alert('Botão foi clicado!');
+            }
+            
+        </script>-->
+
+        <!--Aula 2-->
+        <div id="app">
+            <input type="text" name="nome" id="nome"/>
+            <button class="botao">Adicionar</button>     
+            
+            <div id="box">
+
+            </div>
+  
+        </div>
+        <div id="exercicio">
+                <button class="btn_exercicio">Clique</button>
+        </div>
+        <div id="quadro">
+        </div>
+        
+    
+            <script>
+               var inputElement = document.querySelector('div#app input');
+                console.log(inputElement);
+
+                var btnElement = document.querySelector('button.botao');
+                btnElement.onclick = function(){
+                    var text = inputElement.value;
+
+                    //Exercicio 3
+                    var nomes = [text];
+
+                    for (let value of nomes) {
+                        var liElement = document.createElement('li');
+                        var txElement = document.createTextNode(value);
+
+                        liElement.appendChild(txElement);
+                        var quadroElement = document.querySelector('#quadro');
+                        quadroElement.appendChild(liElement);
+
+                    }
+
+                    inputElement.value = null;
+                };
+
+                var linkElement = document.createElement('a');
+                linkElement.setAttribute('href', 'http://cotrijal.com.br/');
+
+                var textElement = document.createTextNode('Cotrijal');
+                linkElement.appendChild(textElement);
+
+                var conteinerElement = document.querySelector('#app');
+                conteinerElement.appendChild(linkElement);
+
+                /*
+                var boxElement = document.querySelector('#box');
+                console.log(boxElement);
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.backgroundColor = '#f00';
+                */
+
+                //Exercicio 1
+                var btnElement = document.querySelector('button.btn_exercicio');
+                btnElement.onclick = function(){
+
+                    var boxElement = document.querySelector('#quadro');
+                    boxElement.style.width = 100;
+                    boxElement.style.height = 100;
+                    boxElement.style.backgroundColor = '#f00';
+
+                    console.log(1);
+                };
+
+                //Exercício 2
+                function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+                }
+
+                var quadroElement = document.querySelector('#quadro');
+
+                quadroElement.onmouseover = function(){
+                    var newColor = getRandomColor(); // #E943F0
+                    
+                    quadroElement.style.backgroundColor = newColor;
+                }
+
+
+              
+
+                //Exercício 4
+                /*
+                Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
+
+                    <input type="text" name="nome">
+                    <button onClick="adicionar()">Adicionar</button>
+                    Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+                */
+
+         
+                
+
+            </script>
+    </body>
+
+</html>
