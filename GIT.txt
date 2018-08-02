@@ -65,6 +65,5 @@
 ** Apagar o commit
 	git reset <commit>
 	
-*************CONFLITOS*****************
 
 		
