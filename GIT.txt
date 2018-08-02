@@ -1,0 +1,43 @@
+/***********************************************
+********************GIT*************************
+************************************************/
+
+** Instalar 
+	https://github-production-release-asset-2e65be.s3.amazonaws.com/23216272/c0b82e3e-7623-11e8-93a5-b72bebbce542?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20180802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180802T134846Z&X-Amz-Expires=300&X-Amz-Signature=60eee06a090842ad1137b5ca17e9c3ae16b9d96c3aed131b7a5350a423bc6adf&X-Amz-SignedHeaders=host&actor_id=41925148&response-content-disposition=attachment%3B%20filename%3DGit-2.18.0-64-bit.exe&response-content-type=application%2Foctet-stream
+	http://www.giteyeapp.com/
+
+** Gerar Chave SSH GitHub
+	https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+	https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+	
+** Criar repositório
+	git init -- dentro do diretório do projeto
+	
+** Adicionar arquivo ao repositório
+	git add nome_arquivo
+	
+** Criar usuário e email global 
+	git config --global user.name "mcnbottega"
+	git config --global user.email "mcn.bottega@gmail.com"
+	
+** Comitar arquivos
+	git commit -m "Mensagem de commit"
+	
+** Visualizar log do repositório
+	git log
+
+** Visualizar status do repositório
+	git status
+	
+** Sincronizar repositório local com o GitHub
+	git remote add origem git@github.com:mcnbottega/JS.git
+	git push -u origem master
+	
+	git push -- usar após a configuração para atualizar
+	
+** Desfazer alteração no arquivo	
+	git checkout -- <arquivo>
+	
+** Diferença entre o local e remoto
+	git diff
+	git diff HEAD~1 -- Difença do último commit
