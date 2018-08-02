@@ -47,3 +47,24 @@
 	
 ** Buscar informações do repositório remoto
 	git pull
+	
+** Ver históricos de alteração	
+	git checkout <commit> <file> ex:. git checkout 3f823833f58912b8ca99a770c49554e3d362cfbd
+	** Voltar ao master
+	git checkout master	
+	
+** Desfazer alteração
+	git checkout -- <arquivo>
+
+** Desfazer alteração desde o último commit
+	git checkout HEAD -- <arquivo>
+	
+** Reverter um commit
+	git revert <commit>
+	
+** Apagar o commit
+	git reset <commit>
+	
+*************CONFLITOS*****************
+
+		
