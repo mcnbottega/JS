@@ -41,3 +41,9 @@
 ** Diferença entre o local e remoto
 	git diff
 	git diff HEAD~1 -- Difença do último commit
+	
+** Clonar repositório
+	git clone <url>
+	
+** Buscar informações do repositório remoto
+	git pull
