@@ -65,5 +65,9 @@
 ** Apagar o commit
 	git reset <commit>
 	
+** Criar nova branch
+	git branch <nome>
 
+** Mudar branch
+	git checkout <nome_branch>
 		
