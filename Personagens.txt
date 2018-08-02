@@ -1,6 +1,2 @@
 -personagens
-<<<<<<< HEAD
 1
-=======
-2
->>>>>>> f4a557f8e73a03d6c5d430fbd431812c156ef524
